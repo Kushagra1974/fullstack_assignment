@@ -4,7 +4,6 @@ import cors from "cors"
 import path from "path"
 import { fileURLToPath } from 'url';
 import { startServer } from "./startServer.js"
-
 import { connectToDb } from "./db.js"
 
 const __filename = fileURLToPath(import.meta.url);
@@ -26,7 +25,7 @@ app.use(cors())
 
 connectToDb(URL)
 
-app.use('/',express.static(__path));
+// app.use('/',express.static(__path));
 
 startServer(app)
 
