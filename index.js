@@ -25,7 +25,7 @@ app.use(cors())
 
 connectToDb(URL)
 
-// app.use('/',express.static(__path));
+app.use('/',express.static(__path));
 
 startServer(app)
 
